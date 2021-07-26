@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import * as apiSearches from "../Services/api.services"
+import CreatePrivateShelf from './Components/PrivateShelves/DynamicShelf';
 
 
 
@@ -30,6 +31,7 @@ function SearchBooks(){
     else {
         return (
             <div>
+            <CreatePrivateShelf />
             <h2>Searched Books</h2>
             {listBooks.map(oneBook =>{
                 return(

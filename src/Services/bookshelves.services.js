@@ -109,9 +109,6 @@ export function moveBookPrivate(form) {
 
 
 
-
-
-
 /* 
 
 // CODE FROM BOOKSHELF PROJECT 

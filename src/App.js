@@ -3,6 +3,7 @@ import './App.css';
 import * as apiSearches from "./Services/api.services"
 import { useEffect, useState } from 'react';
 
+
 //searchAny needs  {searchType: , subSearch: , searchTerms:}
 //searchType: "main" or "notMain"
 //subSearch: "searc" / "authors" / "subjects"
@@ -14,9 +15,6 @@ import { useEffect, useState } from 'react';
 
 function App() {
 
-  return(
-    <div>
-      <SearchBooks />
 
   const [authorsState, setAuthors] = useState([])
   const [worksState, setWorks] = useState([])
@@ -42,7 +40,7 @@ function App() {
   }
 
 
-  )
+
   
 
   function handleSubmit(event) {
