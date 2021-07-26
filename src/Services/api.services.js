@@ -21,3 +21,12 @@ export function accessAuthorWorks(key) {
     .catch(err => console.log(err))
 
 }
+
+export function searchBookList() {
+    return urlbase.get("/search.json?title=harry+potter+stone&language=eng")
+    .then(result => {
+        console.log("result is...", result)
+        return result
+    })
+    .catch(err => console.log(err))
+}
